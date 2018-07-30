@@ -6,12 +6,41 @@
 
 * concat 返回新数组，两边的原始数组都不会变化
 * slice 返回新数组，从开始到结束（不包括结束）选择的数组的一部分浅拷贝到一个新数组。且原始数组不会被修改。
+* every
+* some
+
+
+
+#### ES6语法之Map键值对转化数组
+
+new Map创建一个map
+
+```Js
+let map = new Map([[1,"one"], [2,"two"], [3,"three"]]);
+
+map.set(4, "four");
+```
+
+
+
+获取所有键值对：
+
+```Js
+console.log("获取key")
+console.log([...map.keys()]) // 输出[1, 2, 3, 4]
+
+console.log("获取value")
+console.log([...map.values()]) // 输出[one, two, three, four]
+
+console.log("获取map数组")
+console.log([...map]) // 输出[[1, "one"], [2, "two"], [3, "three"], [4, "four"]]
+```
 
 
 
 #### 两个升序数组合并成一个升序数组
 
-// 复杂度 O(M+N) 时间 O(M+N) 空间
+* 复杂度 O(M+N) 时间 O(M+N) 空间
 
 ```Js
 function merge(left, right){
@@ -29,7 +58,7 @@ function merge(left, right){
 
 
 
-// 复杂度 O(M+N) 时间 O(1) 空间
+* 复杂度 O(M+N) 时间 O(1) 空间
 
 ```Js
 public class Solution {
@@ -48,6 +77,8 @@ public class Solution {
 
 #### 数组去重
 
+* reduce方法
+
 ```Js
 let arr = [1,2,1,2,3,5,4,5,3,4,4,4,4];
 
@@ -61,8 +92,24 @@ let result = arr.sort().reduce((init, current) => {
 
 }, []);
 
-console.log(result); //[1,2,3,4,5]
+console.log(result); // [1,2,3,4,5]
 ```
+
+
+
+* filter方法
+
+```Js
+let arr = [1,2,1,2,3,5,4,5,3,4,4,4,4];
+
+let result = arr.filter( (element, index, self) => {
+    return self.indexOf(element) === index;
+});
+
+console.log(result); // [1,2,3,5,4]
+```
+
+
 
 
 
