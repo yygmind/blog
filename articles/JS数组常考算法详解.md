@@ -16,16 +16,11 @@
 new Map创建一个map
 
 ```Js
+// new Map创建一个map
 let map = new Map([[1,"one"], [2,"two"], [3,"three"]]);
-
 map.set(4, "four");
-```
 
-
-
-获取所有键值对：
-
-```Js
+// 获取所有键值对
 console.log("获取key")
 console.log([...map.keys()]) // 输出[1, 2, 3, 4]
 
