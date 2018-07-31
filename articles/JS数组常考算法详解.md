@@ -108,6 +108,20 @@ console.log(result); // [1,2,3,5,4]
 
 
 
+#### 多维数组降维
+
+```Js
+const flattenDeep = (arr) => Array.isArray(arr)
+  ? arr.reduce( (a, b) => [...a, ...flattenDeep(b)] , [])
+  : [arr]
+
+flattenDeep([1, [[2], [3, [4]], 5]])
+```
+
+
+
+
+
 #### 两个数组的交集 II
 
 给定两个数组，写一个方法来计算它们的交集。
