@@ -4,10 +4,45 @@
 
 ####数组方法概述
 
-* concat 返回新数组，两边的原始数组都不会变化
-* slice 返回新数组，从开始到结束（不包括结束）选择的数组的一部分浅拷贝到一个新数组。且原始数组不会被修改。
-* every
-* some
+* concat() 
+
+  返回新数组，两边的原始数组都不会变化
+
+  
+
+* slice() 
+
+  返回新数组，从开始到结束（不包括结束）选择的数组的一部分浅拷贝到一个新数组。且原始数组不会被修改。
+
+
+
+* filter()
+
+
+
+* map()
+
+  创建一个新数组并返回，其中新数组的每个元素由调用原始数组中的每一个元素执行提供的函数得来，原始数组不会改变。
+
+  
+
+* forEach()
+
+  针对每一个元素执行提供的函数。会修改原来的数组，不会返回执行结果，返回`undefined`。
+
+  
+
+* every()
+
+  对数组中的每个元素都执行一次指定的回调函数，直到回调函数返回`false`，此时`every()`返回`false`并不再继续执行。如果回调函数对每个元素都返回`true`，那么`every()`将返回`true`。
+
+  
+
+* some()
+
+  对数组中的每个元素都执行一次指定的回调函数，直到回调函数返回`true`，此时`some()`返回`true`并不再继续执行。如果回调函数对每个元素都返回`false`，那么`some()`将返回`false`。
+
+  
 
 
 
@@ -35,11 +70,11 @@ console.log([...map]) // 输出[[1, "one"], [2, "two"], [3, "three"], [4, "four"
 
 #### 两个升序数组合并成一个升序数组
 
-* 复杂度 O(M+N) 时间 O(M+N) 空间
+* 时间复杂度 O(M+N)，空间复杂度O(M+N) 
 
 ```Js
 function merge(left, right){
-    Let result  = [],
+    let result  = [],
         il      = 0,
         ir      = 0;
 
@@ -53,7 +88,7 @@ function merge(left, right){
 
 
 
-* 复杂度 O(M+N) 时间 O(1) 空间
+* 时间复杂度 O(M+N) ，空间复杂度 O(1) 
 
 ```Js
 public class Solution {
@@ -75,19 +110,16 @@ public class Solution {
 * reduce方法
 
 ```Js
-let arr = [1,2,1,2,3,5,4,5,3,4,4,4,4];
-
-let result = arr.sort().reduce((init, current) => {
-
-    if(init.length===0 || init[init.length-1]!==current){
-        init.push(current);
+const distinct = arr => arr.sort().reduce( (init, current) => {
+    
+    if (init.length === 0 || init[init.length - 1] !== current) {
+        init.push( current );
     }
-
     return init;
-
 }, []);
 
-console.log(result); // [1,2,3,4,5]
+let arr = [1,2,1,2,3,5,4,5,3,4,4,4,4];
+distinct(arr); // [1, 2, 3, 4, 5]
 ```
 
 
@@ -95,13 +127,12 @@ console.log(result); // [1,2,3,4,5]
 * filter方法
 
 ```Js
-let arr = [1,2,1,2,3,5,4,5,3,4,4,4,4];
-
-let result = arr.filter( (element, index, self) => {
-    return self.indexOf(element) === index;
+const distinct = arr => arr.filter( (element, index, self) => {
+    return self.indexOf( element ) === index;
 });
 
-console.log(result); // [1,2,3,5,4]
+let arr = [1,2,1,2,3,5,4,5,3,4,4,4,4];
+distinct(arr); // [1, 2, 3, 5, 4]
 ```
 
 
@@ -111,11 +142,11 @@ console.log(result); // [1,2,3,5,4]
 #### 多维数组降维
 
 ```Js
-const flattenDeep = (arr) => Array.isArray(arr)
+const flattenDeep = arr => Array.isArray(arr)
   ? arr.reduce( (a, b) => [...a, ...flattenDeep(b)] , [])
   : [arr]
 
-flattenDeep([1, [[2], [3, [4]], 5]])
+flattenDeep([1, [[2], [3, [4]], 5]]); // [1, 2, 3, 4, 5]
 ```
 
 
