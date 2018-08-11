@@ -40,95 +40,6 @@ padding:10px;
 
 
 
-* DIV居中问题
-
-  1、使用flex
-
-  ```css
-  .parent {
-      height: 600px;
-      border: 1px solid red;
-      
-      display: flex; 
-      justify-content: center;
-      align-items: center;
-  }
-  .child {
-      border: 1px solid green;
-    	width: 300px;
-  }
-  ```
-
-  2、使用transform
-
-  ```css
-  .parent{
-    height: 600px;
-    border: 1px solid red;
-    position: relative;
-  }
-  .child{
-    border: 1px solid green;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-  }
-  ```
-
-  3、使用margin-top -一半的高度
-
-  ```css
-  .parent{
-    height: 600px;
-    border: 1px solid red;
-    position: relative;
-  }
-  .child{
-    border: 1px solid green;
-    width: 300px;
-    height: 100px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-left: -150px;
-    margin-top: -50px;
-  }
-  ```
-
-  4、使用绝对布局`absolute`和`margin:auto`
-
-  ```css
-  .parent{
-    height: 600px;
-    border: 1px solid red;
-    position: relative;
-  }
-  .child{
-    border: 1px solid green;
-    position: absolute;
-    width: 300px;
-    height: 200px;
-    margin: auto;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-  }
-  ```
-
-
-
-* 行内元素居中
-
-  ```css
-  .parent {
-      text-align: center
-  }
-  ```
-
-
-
 * `display`和`position`介绍
 
   * `display`规定元素应该生成的框的类型。
@@ -210,20 +121,205 @@ padding:10px;
         }
     ```
 
-    
+
+
+- 行内元素居中
+
+  ```css
+  .parent {
+      text-align: center
+  }
+  ```
+
+
+
+* DIV居中问题
+
+  1、使用flex
+
+  ```css
+  .parent {
+      height: 600px;
+      border: 1px solid red;
+      
+      display: flex; 
+      justify-content: center;
+      align-items: center;
+  }
+  .child {
+      border: 1px solid green;
+    	width: 300px;
+  }
+  ```
+
+  2、使用transform
+
+  ```css
+  .parent{
+    height: 600px;
+    border: 1px solid red;
+    position: relative;
+  }
+  .child{
+    border: 1px solid green;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  ```
+
+  3、使用margin-top -一半的高度
+
+  ```css
+  .parent{
+    height: 600px;
+    border: 1px solid red;
+    position: relative;
+  }
+  .child{
+    border: 1px solid green;
+    width: 300px;
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -150px;
+    margin-top: -50px;
+  }
+  ```
+
+  4、使用绝对布局`absolute`和`margin:auto`
+
+  ```css
+  .parent{
+    height: 600px;
+    border: 1px solid red;
+    position: relative;
+  }
+  .child{
+    border: 1px solid green;
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  ```
+
+
 
 * 三栏布局
 
+  要求两边两栏宽度固定，中间栏宽度自适应
+  * 方案一：position绝对定位法
 
+    **center的div需要放到后面**，将左右两边使用absolute定位，因为绝对定位使其脱离文档流，最后面的center会显示在正常文档流中，然后设置margin属性，留出左右两边的宽度。
 
+    ```css
+    .parent {
+      border: 1px solid red;
+      position: relative;
+    }
+    
+    .child_left {
+      width: 100px;
+      height: 100px;
+      border: 1px solid gray;
+      position: absolute;
+    }
+    
+    .child_right {
+      width: 100px;
+      height: 100px;
+      border: 1px solid green;
+      position: absolute;
+      right: 0;
+    }
+    
+    // div在html中必须放在left和right之后
+    .child_center {
+      width: 100px;
+      height: 100px;
+      border: 1px solid black;
+      margin: auto
+    }
+    ```
 
+    
 
-* 为什么css放在顶部而js写在后面
+  * 方案二：float 自身浮动法
+
+    **center的div需要放到后面**，对左右使用float:left和float：right，float使左右两个元素脱离文档流，中间的正常文档流中，然后设置margin属性，留出左右两边的宽度。
+
+    ```css
+    .parent {
+      border: 1px solid red;
+      position: relative;
+    }
+    
+    .child_left {
+      width: 100px;
+      height: 100px;
+      border: 1px solid gray;
+      float: left;
+    }
+    
+    .child_right {
+      width: 100px;
+      height: 100px;
+      border: 1px solid green;
+      float: right;
+    }
+    
+    .child_center {
+      width: 100px;
+      height: 100px;
+      border: 1px solid black;
+      margin: auto
+    }
+    ```
 
 
 
 * 介绍BFC
-* 
+
+  BFC是CSS布局的一个概念，是一块独立的渲染区域，是一个环境，里面的元素不会影响到外部的元素 。
+
+  * 如何生成BFC：（即脱离文档流） 	     
+    * 1、根元素，即HTML元素（最大的一个BFC） 	     
+    * 2、float的值不为none 	     
+    * 3、position的值为absolute或fixed 	     
+    * 4、overflow的值不为visible（默认值。内容不会被修剪，会呈现在元素框之外） 	     
+    * 5、display的值为inline-block、table-cell、table-caption 
+
+  
+
+  * BFC布局规则：
+
+    * 1.内部的Box会在垂直方向，一个接一个地放置。 	     
+
+    * 2.属于同一个BFC的两个相邻的Box的margin会发生重叠 	    
+
+    * 3.BFC就是页面上的一个隔离的独立容器，容器里面的子元素不会影响到外面的元素。反之也如此, 文字环绕效果，设置float 	     
+
+    * 4.BFC的区域不会与float box重叠。 	     
+
+    * 5.计算BFC的高度，浮动元素也参与计算
+
+      
+
+  * BFC作用：
+
+    * 1.自适应两栏布局 	 
+    * 2.可以阻止元素被浮动元素覆盖 	 
+    * 3.可以包含浮动元素---清除内部浮动 原理:：触发父div的BFC属性，使下面的子div都处在父div的同一个BFC区域之内 	 
+    * 4.分属于不同的BFC时，可以阻止margin重叠
+
+   
 
 
 
