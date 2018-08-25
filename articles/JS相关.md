@@ -275,17 +275,84 @@ b; // {name: "web前端开发"}
 
 #### Symbol的作用
 
+表示独一无二的值。
 
+Symbol 值通过`Symbol`函数生成。这就是说，对象的属性名现在可以有两种类型，一种是原来就有的字符串，另一种就是新增的 Symbol 类型。凡是属性名属于 Symbol 类型，就都是独一无二的，可以保证不会与其他属性名产生冲突。
 
-#### react中的key能不能放到symbol中当参数
+```js
+let s = Symbol();
 
+typeof s
+// "symbol"
+```
 
+`Symbol`函数前不能使用`new`命令，否则会报错。这是因为生成的 Symbol 是一个原始类型的值，不是对象。也就是说，由于 Symbol 值不是对象，所以不能添加属性。基本上，它是一种类似于字符串的数据类型。
+
+`Symbol`函数的参数只是表示对当前 Symbol 值的描述，因此相同参数的`Symbol`函数的返回值是不相等的。 
+
+```js
+// 没有参数的情况
+let s1 = Symbol();
+let s2 = Symbol();
+
+s1 === s2 // false
+
+// 有参数的情况
+let s1 = Symbol('foo');
+let s2 = Symbol('foo');
+
+s1 === s2 // false
+```
 
 
 
 #### 实现一个promise.all，多个异步并发执行
 
+```js
+function PromiseAll(iterable) {
+	var deferred = NewPromiseCapability(this);
+	var resolutions = new InternalArray();
+	function CreateResolveElementFunction(index, values, promiseCapability) {
+    	var alreadyCalled = false;
+    	return (x) => {
+        	if (alreadyCalled === true) return;
+        	alreadyCalled = true;
+			//把这个promise实例的执行结果缓存到resolutions数组中
+        	values[index] = x;
+    	};
+	}
 
+	var i = 0;
+	for (var value of iterable) {
+		//把传入的参数用promise.resolve转化为Promise对象实例
+    	var nextPromise = this.resolve(value);
+		//转换完成后调用then方法执行
+    	nextPromise.then(
+        CreateResolveElementFunction(i, resolutions, deferred),
+        deferred.reject);
+    	++i;
+	}
+	return deferred.promise;
+}
+```
+
+这里看起来就是把Promise.all传入的数组，用for of进行了遍历，然后对每一项先用promise.resolve(this.resolve)转化为Promise对象并且赋值给nextPromise，接着就调用nextPromise.then方法，把每一个promise对象的结果缓存到resolutions数组中：
+
+```
+values[index] = x
+```
+
+最后返回deferred.promise，当我们调用Promise.all([]).then的时候，得到的就是一个数组，里面的每一项元素对应传入的每一项Promise的处理结果。
+
+至于提到的并行，应该说绝大部分时候我们指的是**异步操作**的并行 实际上来说:
+
+```
+Promise.all([异步操作1，异步操作2，异步操作3]).then
+```
+
+虽然依旧是循环先执行异步操作1.then，再执行异步操作2.then，但是这个for of循环**并不会等到异步操作.then执行完成后再去执行异步操作2.then**，上面的代码很容易看到决定resolutions数组结果顺序的变量i是传入CreateResolveElementFunction函数的，因此这个for of循环体现出了这些异步操作的并行
+
+> https://cnodejs.org/topic/587dbafac4f5cf76196714f1
 
 
 

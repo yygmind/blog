@@ -260,3 +260,6 @@ instance1.colors.push("3"); // ["red", "blue", "green", "3"]
 
 
 > [《javascript高级程序设计》笔记：继承](https://segmentfault.com/a/1190000011917606)
+>
+> https://segmentfault.com/a/1190000011880268
+

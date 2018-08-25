@@ -40,6 +40,12 @@
 
 要修改state，只能使用this.setState()，不能使用this.state.value=2类似方式设置state，一是不会驱动重新渲染，二是很可能被后面的操作替换，造成无法预知的错误。此外，React利用状态队列来实现setState的异步更新，避免频繁地重复更新state。
 
+* setState同步更新状态的情况(正常使用基本上不会触及到)
+
+在React中，**如果是由React引发的事件处理（比如通过onClick引发的事件处理），调用setState不会同步更新this.state，除此之外的setState调用会同步执行this.state**。所谓“除此之外”，指的是绕过React通过addEventListener直接添加的事件处理函数，还有通过setTimeout/setInterval产生的异步调用。
+
+原因：在React的setState函数实现中，会根据一个变量isBatchingUpdates判断是直接更新this.state还是放到队列中回头再说，而isBatchingUpdates默认是false，也就表示setState会同步更新this.state，但是，**有一个函数batchedUpdates，这个函数会把isBatchingUpdates修改为true，而当React在调用事件处理函数之前就会调用这个batchedUpdates，造成的后果，就是由React控制的事件处理过程setState不会同步更新this.state**。
+
 
 
 #### React中的key为什么不可以用index
@@ -112,17 +118,21 @@ history.state             // 返回当前状态对象
 
 
 
+#### prop和state的区别
 
+- prop用于定义外部接口，state用于记录内部状态；
+- prop的赋值在外部世界使用组件时，state的赋值在组件内部；
+- 组件不应该改变prop的值，而state的存在的目的就是让组件来改变的。
 
-#### React怎么对数据进行更新
-
-
-
-#### state状态更改时，组件发生了变化，如何知道要去渲染新的值，有个生命周期有两个参数（next, this）
+> https://segmentfault.com/a/1190000009921542#articleHeader10
 
 
 
 #### React组件更新原理
+
+> http://qingbob.com/dig-into-react-lifecircle-02/
+>
+> https://www.jianshu.com/p/c6257cbef1b1
 
 
 
@@ -130,13 +140,19 @@ history.state             // 返回当前状态对象
 
 **高阶函数**的定义：接收函数作为输入，或者输出另一个函数的一类函数，被称作高阶函数。对于**高阶组件**，它描述的便是接受React组件作为输入，输出一个新的React组件的组件。
 
-更通俗地描述为，**高阶组件**通过包裹（wrapped）被传入的React组件，经过一系列处理，最终返回一个相对增强（enhanced）的React组件，供其他组件调用。
+更通俗地描述为，**高阶组件**通过包裹（wrapped）被传入的React组件，经过一系列处理，最终返回一个相对增强（enhanced）的React组件，供其他组件调用。 
 
- 
+> https://segmentfault.com/a/1190000010371752
+
+
 
 #### rn写的组件如何变成原生的
 
 ![](http://upload-images.jianshu.io/upload_images/1498391-a146678013f455eb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+`RN js`编写完业务代码后，通过`react-native bundle`命令，将代码分别编译成一个`index.ios.bundle`和`index.android.bundle`文件，当然还是资源文件。然后放到`Android`、`iOS`的原生工程里，通过黄色说明块里的示例代码，将`js`写的所有逻辑业务读成一个`View`来展示在原生里，当然这个`View`需要`Activity/Fragment/ViewController`来承载。然后原生`App`打开相应承载的页面就可以看到`RN`写的业务了。所以，正常情况下，对于原生来说，所有的`RN`页面都是在一个原生页面里的。
+
+顶部还有有个`node_modules`，它其实在工程里是一个文件夹，里面存放了所有的`js`，`Android`，`iOS`都需要的一个共同类库以及源码，所有的通信、组件都在这个里面。所以，三个工程里都需要读这个文件夹里的东西，但是我们不用关心具体，这个是由`npm`来自动下载的。只需要安装文档提示配置好这个文件夹的路径就ok了。
 
 > https://my.oschina.net/u/1181284/blog/1553147
 
@@ -147,3 +163,5 @@ history.state             // 返回当前状态对象
 引用类型数据一直返回true，那就得想办法处理，能不能把前后的数据变成不一样的引用呢，那样不就不相等了吗？于是就有了我们的不可变数据。react官方提供了一个[Immutability Helpers](https://facebook.github.io/react/docs/update.html)
 
 > http://imweb.io/topic/577512fe732b4107576230b9
+>
+> https://segmentfault.com/a/1190000008925295
