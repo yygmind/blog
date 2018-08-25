@@ -273,10 +273,21 @@ b; // {name: "web前端开发"}
 
 
 
+#### Symbol的作用
+
+
+
+#### react中的key能不能放到symbol中当参数
+
+
+
+
+
 #### 实现一个promise.all，多个异步并发执行
 
-#### rn写的组件如何变成原生的
+
+
+
 
 #### 实现sum(3, 5) => sum(3)(5)
 
-#### shouldComponentUpdate怎么判断对象
