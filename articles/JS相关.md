@@ -142,26 +142,24 @@ http.get('/login').then(data => {
 
 
 
-
-
 #### JS中的堆内存和栈内存
 
 JavaScript中的变量分为基本类型和引用类型。基本类型就是保存在栈内存中的简单数据段，而引用类型指的是那些保存在堆内存中的对象。
 
-**1、基本类型** 
+1、基本类型
 
-         基本类型有undefined、null、boolean、number、string和symbol。这些类型在内存中分别占有固定大小的空间，他们的值保存在栈空间，我们通过按值来访问。
+基本类型有undefined、null、boolean、number、string和symbol。这些类型在内存中分别占有固定大小的空间，他们的值保存在栈空间，我们通过按值来访问。
 
-**2、引用类型**
+2、引用类型
 
-          引用类型，值大小不固定，栈内存中存放地址指向堆内存中的对象。是按引用访问的。如下图所示：栈内存中存放的只是该对象的访问地址，在堆内存中为这个值分配空间。由于这种值的大小不固定，因此不能把它们保存到栈内存中。但内存地址大小的固定的，因此可以将内存地址保存在栈内存中。 这样，当查询引用类型的变量时， 先从栈中读取内存地址， 然后再通过地址找到堆中的值。对于这种，我们把它叫做按引用访问。
+引用类型，值大小不固定，栈内存中存放地址指向堆内存中的对象。是按引用访问的。如下图所示：栈内存中存放的只是该对象的访问地址，在堆内存中为这个值分配空间。由于这种值的大小不固定，因此不能把它们保存到栈内存中。但内存地址大小的固定的，因此可以将内存地址保存在栈内存中。 这样，当查询引用类型的变量时， 先从栈中读取内存地址， 然后再通过地址找到堆中的值。对于这种，我们把它叫做按引用访问。
 
 ![](https://img-blog.csdn.net/20141212220233511?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveGRkMTk5MTA1MDU=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center)
 
 ```js
 let a = {name: "web前端开发"};
 let b = a;
-a = null; // 改变的只是
+a = null; // 改变的只是栈内存中存放的地址
 
 b; // {name: "web前端开发"} 
 
@@ -204,7 +202,7 @@ b; // {name: "web前端开发"}
 * 3、显示绑定
 
   * 通过`call(..)` 或者 `apply(..)`方法。显示绑定无法解决丢失绑定问题。
-  * 硬绑定解决。创建函数bar()，并在它的内部手动调用foo.call(obj)，强制把foo的this绑定到了obj。ES5内置了`Function.prototype.bind`，可以实现柯里化。
+  * 硬绑定可以解决绑定丢失的问题。创建函数bar()，并在它的内部手动调用`foo.call(obj)`，强制把foo的this绑定到了obj。ES5内置了`Function.prototype.bind`，可以实现柯里化。
 
   ```js
   function foo() {
@@ -328,8 +326,9 @@ function PromiseAll(iterable) {
     	var nextPromise = this.resolve(value);
 		//转换完成后调用then方法执行
     	nextPromise.then(
-        CreateResolveElementFunction(i, resolutions, deferred),
-        deferred.reject);
+        	CreateResolveElementFunction(i, resolutions, deferred),
+        	deferred.reject
+        );
     	++i;
 	}
 	return deferred.promise;
@@ -350,7 +349,7 @@ values[index] = x
 Promise.all([异步操作1，异步操作2，异步操作3]).then
 ```
 
-虽然依旧是循环先执行异步操作1.then，再执行异步操作2.then，但是这个for of循环**并不会等到异步操作.then执行完成后再去执行异步操作2.then**，上面的代码很容易看到决定resolutions数组结果顺序的变量i是传入CreateResolveElementFunction函数的，因此这个for of循环体现出了这些异步操作的并行
+虽然依旧是循环先执行异步操作1.then，再执行异步操作2.then，但是这个for of循环**并不会等到异步操作1.then执行完成后再去执行异步操作2.then**，上面的代码很容易看到决定resolutions数组结果顺序的变量i是传入CreateResolveElementFunction函数的，因此这个for of循环体现出了这些异步操作的并行
 
 > https://cnodejs.org/topic/587dbafac4f5cf76196714f1
 
