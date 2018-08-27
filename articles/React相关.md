@@ -165,7 +165,103 @@ history.state             // 返回当前状态对象
 
 #### shouldComponentUpdate怎么判断对象
 
-引用类型数据一直返回true，那就得想办法处理，能不能把前后的数据变成不一样的引用呢，那样不就不相等了吗？于是就有了我们的不可变数据。react官方提供了一个[Immutability Helpers](https://facebook.github.io/react/docs/update.html)
+引用类型数据一直返回true，那就得想办法处理，能不能把前后的数据变成不一样的引用呢，那样不就不相等了吗？于是就有了我们的不可变数据。
+
+方法1：react官方提供了一个[Immutability Helpers](https://facebook.github.io/react/docs/update.html)
+
+```js
+var update = require('react-addons-update');
+
+var newData = update(myData, {
+  x: {y: {z: {$set: 7}}},
+  a: {b: {$push: [9]}}
+});
+```
+
+
+
+方法2：浅拷贝，直接改变引用
+
+```js
+const newValue = {
+    ...oldValue
+    // 在这里做你想要的修改
+};
+
+// 快速检查 —— 只要检查引用
+newValue === oldValue; // false
+
+// 如果你愿意也可以用 Object.assign 语法
+const newValue2 = Object.assign({}, oldValue);
+
+newValue2 === oldValue; // false
+```
+
+然后在`shouldComponentUpdate`中进行比对
+
+```js
+shouldComponentUpdate(nextProps) {
+    return isObjectEqual(this.props, nextProps);
+}
+
+const isObjectEqual = (obj1, obj2) => {
+    if(!isObject(obj1) || !isObject(obj2)) {
+        return false;
+    }
+
+    // 引用是否相同
+    if(obj1 === obj2) {
+        return true;
+    }
+
+    // 它们包含的键名是否一致？
+    const item1Keys = Object.keys(obj1).sort();
+    const item2Keys = Object.keys(obj2).sort();
+
+    if(!isArrayEqual(item1Keys, item2Keys)) {
+        return false;
+    }
+
+    // 属性所对应的每一个对象是否具有相同的引用？
+    return item2Keys.every(key => {
+        const value = obj1[key];
+        const nextValue = obj2[key];
+
+        if(value === nextValue) {
+            return true;
+        }
+
+        // 数组例外，再检查一个层级的深度
+        return Array.isArray(value) && 
+            Array.isArray(nextValue) && 
+            isArrayEqual(value, nextValue);
+    });
+};
+
+const isArrayEqual = (array1 = [], array2 = []) => {
+    if(array1 === array2) {
+        return true;
+    }
+
+    // 检查一个层级深度
+    return array1.length === array2.length &&
+        array1.every((item, index) => item === array2[index]);
+};
+```
+
+
+
+**实际采用方法：**
+
+我们目前采用的是在reducer里面更新数据使用`Object.assign({}, state, {newkey: newValue}`（数据管理采用redux），然后在组件里面根据某个具体的字段判断是否更新，如title或id等，而不是判断整个对象。
+
+```js
+shouldComponentUpdate: function(nextProps, nextState){
+    return nextProps.title !== this.props.title;
+}
+```
+
+
 
 > http://imweb.io/topic/577512fe732b4107576230b9
 >
