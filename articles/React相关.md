@@ -118,11 +118,16 @@ history.state             // 返回当前状态对象
 
 
 
-#### prop和state的区别
+#### Props和state的区别
 
-- prop用于定义外部接口，state用于记录内部状态；
-- prop的赋值在外部世界使用组件时，state的赋值在组件内部；
-- 组件不应该改变prop的值，而state的存在的目的就是让组件来改变的。
+-  `props` 传递到组件（类似于函数参数），而 `state` 是在组件内管理的（类似于函数中声明的变量）
+
+- Props用于定义外部接口，state用于记录内部状态；
+
+- Props的赋值在外部世界使用组件时，state的赋值在组件内部；
+
+- 组件不应该改变props的值，而state的存在的目的就是让组件来改变的。
+
 
 > https://segmentfault.com/a/1190000009921542#articleHeader10
 
