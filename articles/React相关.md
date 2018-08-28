@@ -266,3 +266,10 @@ shouldComponentUpdate: function(nextProps, nextState){
 > http://imweb.io/topic/577512fe732b4107576230b9
 >
 > https://segmentfault.com/a/1190000008925295
+
+
+
+#### Webpack怎么配置多入口，怎么抽离出通用组件
+
+
+
