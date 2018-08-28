@@ -355,7 +355,14 @@ Promise.all([异步操作1，异步操作2，异步操作3]).then
 
 
 
-#### 实现sum(3, 5) => sum(3)(5)
+#### 实现sum(2)(3)=>5
+
+```js
+var sum=function(i){ return function(j){return i+j;}}
+undefined
+sum(2)(3)
+5
+```
 
 
 
@@ -363,5 +370,13 @@ Promise.all([异步操作1，异步操作2，异步操作3]).then
 
 
 
+> https://mengera88.github.io/2017/05/18/Promise%E5%8E%9F%E7%90%86%E8%A7%A3%E6%9E%90/
+
+> https://chasecs.github.io/2017/10/07/simplified-chinese-translation-of-javascript-promises-in-wicked-detail.html
+
+
+
 #### Async/Await怎么实现的异步转同步
+
+> https://www.jianshu.com/p/c1b8b89c4905
 

@@ -77,11 +77,9 @@ async function koaMiddleware(ctx, next){
 
 
 
-
-
 #### Koa和Express的区别
 
-`koa`的确是比`express`轻量的多，`koa`给我的感觉更像是一个中间件框架，`koa`只是一个基础的架子，需要用到的相应的功能时，用相应的中间件来实现就好，诸如路由系统等。一个更好的点在于，`express`是基于回调来处理，至于回调到底有多么的不好，大家可以自行搜索来看。`koa1`基于的`co`库，所以`koa1`利用`Generator`来代替回调，而`koa2`由于`node`对`async/await`的支持，所以`koa2`利用的是`async/await`。
+`koa`的确是比`express`轻量的多，`koa`更像是一个中间件框架，`koa`只是一个基础的架子，需要用到的相应的功能时，用相应的中间件来实现就好，诸如路由系统等。一个更好的点在于，`express`是基于回调来处理。`koa1`基于的`co`库，所以`koa1`利用`Generator`来代替回调，而`koa2`由于`node`对`async/await`的支持，所以`koa2`利用的是`async/await`。
 
 
 
