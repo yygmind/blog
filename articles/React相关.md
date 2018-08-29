@@ -273,3 +273,29 @@ shouldComponentUpdate: function(nextProps, nextState){
 
 
 
+
+
+#### Redux状态树怎么管理
+
+> https://zhuanlan.zhihu.com/p/27093191
+
+
+
+
+
+#### 性能优化
+
+
+
+#### 相对路径别名怎么控制
+
+
+
+#### pureComponent
+
+
+
+#### functionComonent
+
+
+
