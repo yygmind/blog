@@ -277,9 +277,25 @@ shouldComponentUpdate: function(nextProps, nextState){
 
 #### Redux状态树怎么管理
 
+主要适用组件之间共享状态：
+
+1. 组件之间可能被共享的数据，使用redux！
+
+2. 配置信息（token、API）尽量单独记录，或者维护在非视图组件内部
+
+3. 组件内部如无明确外部交互，优选state！复杂交互组件还需内部创建redux实例（甚至多个）
+
+4. 通过mapStates组件之间共享数据，尽量避免监听他人事件
+
+5. 切莫过度依赖redux，状态树尽量简单结构
+
+
+
 > https://zhuanlan.zhihu.com/p/27093191
-
-
+>
+> https://www.zhihu.com/question/50210960
+>
+> https://foio.github.io/redux-state-manage/
 
 
 
@@ -293,9 +309,37 @@ shouldComponentUpdate: function(nextProps, nextState){
 
 #### pureComponent
 
+React15.3中新加了一个 `PureComponent` 类，顾名思义， `pure` 是纯的意思，`PureComponent`也就是纯组件，取代其前身 `PureRenderMixin` ,`PureComponent` 是优化 `React` 应用程序最重要的方法之一，易于实施，只要把继承类从 `Component` 换成 `PureComponent` 即可，可以减少不必要的 `render` 操作的次数，从而提高性能，而且可以少写 `shouldComponentUpdate` 函数，节省了点代码。
+
+当组件更新时，如果组件的 `props` 和 `state` 都没发生改变，`render` 方法就不会触发，省去 `Virtual DOM` 的生成和比对过程，达到提升性能的目的。具体就是 `React` 自动帮我们做了一层浅比较：
 
 
-#### functionComonent
+
+```
+if (this._compositeType === CompositeTypes.PureClass) {
+  shouldUpdate = !shallowEqual(prevProps, nextProps)
+  || !shallowEqual(inst.state, nextState);
+}
+```
+
+而 `shallowEqual` 又做了什么呢？会比较 `Object.keys(state | props)` 的长度是否一致，每一个 `key`是否两者都有，并且是否是一个引用，也就是只比较了第一层的值，确实很浅，所以深层的嵌套数据是对比不出来的。
 
 
+
+`PureComponent`真正起作用的，只是在一些纯展示组件上，复杂组件用了也没关系，反正`shallowEqual`那一关就过不了，不过记得 `props` 和 `state` 不能使用同一个引用
+
+> https://juejin.im/entry/5934c9bc570c35005b556e1a
+
+
+
+#### Function Comonent
+
+1. 第一眼直观的区别是，函数组件的代码量比类组件要少一些，所以函数组件比类组件更加简洁。千万不要小看这一点，对于我们追求极致的程序员来说，这依然是不可忽视的。
+2. 函数组件看似只是一个返回值是DOM结构的函数，其实它的背后是无状态组件（Stateless Components）的思想。**函数组件中，你无法使用State，也无法使用组件的生命周期方法，**这就决定了函数组件都是展示性组件（Presentational Components），接收Props，渲染DOM，而不关注其他逻辑。
+3. 函数组件中没有`this`。所以你再也不需要考虑`this`带来的烦恼。而在类组件中，你依然要记得绑定`this`这个琐碎的事情。如示例中的`sayHi`。
+4. 函数组件更容易理解。当你看到一个函数组件时，你就知道它的功能只是接收属性，渲染页面，它不执行与UI无关的逻辑处理，它只是一个纯函数。而不用在意它返回的DOM结构有多复杂。
+5. 性能。目前React还是会把函数组件在内部转换成类组件，所以使用函数组件和使用类组件在性能上并无大的差异。但是，React官方已承诺，未来将会优化函数组件的性能，因为**函数组件不需要考虑组件状态和组件生命周期方法中的各种比较校验**，所以有很大的性能提升空间。
+6. 函数组件迫使你思考最佳实践。这是最重要的一点。组件的主要职责是UI渲染，理想情况下，所有的组件都是展示性组件，每个页面都是由这些展示性组件组合而成。如果一个组件是函数组件，那么它当然满足这个要求。所以牢记函数组件的概念，可以让你在写组件时，先思考这个组件应不应该是展示性组件。更多的展示性组件意味着更多的组件有更简洁的结构，更多的组件能被更好的复用。
+
+> https://segmentfault.com/a/1190000010320951
 
