@@ -390,3 +390,59 @@ sum(2)(3)
 
 这两种都是用来存储集合数据的，数组就好像继承了对象，它有对象的所有特点，并且自己还有扩展的属性和方法。还有几点区别如下： 1.数组是有序的数据集合，而对象是无序的。 2.数组的属性是0-n的整数，而对象的属性是任意的字符串(name)。
 
+
+
+#### 暂时性死区
+
+
+
+#### Babel转换，let里的块级作用域转成ES5是什么
+
+var 并不存在块级作用域:
+
+```js
+if (true) {
+  var a = 0
+}
+
+console.log(a) // 0
+```
+
+let 却存在块级作用域:
+
+in
+
+```js
+if (true) {
+  let b = 1
+}
+
+console.log(b) // ERROR: b is not defined
+```
+
+out
+
+```js
+"use strict";
+
+if (true) {
+  var _b = 1;
+}
+
+console.log(b); // b is not defined
+```
+
+可以看到，编译出的代码实际上是使用 `_` 替换了原变量，因此在外部访问不到对应变量，以达到块级作用域的效果。
+
+> https://www.kancloud.cn/xiaoyulive/babel/507287
+
+> http://imweb.io/topic/57c1978df47c0de809b38776
+
+
+
+#### 类数组和数组的区别
+
+
+
+
+

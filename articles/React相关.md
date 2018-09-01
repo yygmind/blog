@@ -343,3 +343,9 @@ if (this._compositeType === CompositeTypes.PureClass) {
 
 > https://segmentfault.com/a/1190000010320951
 
+
+
+
+
+#### PureComponet和Function Component的区别
+
