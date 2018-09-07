@@ -75,6 +75,12 @@ padding:10px;
 
 
 
+* em和strong的区别
+  * em表示语义上的强调，默认为斜体
+  * strong表示重要性的一种强调，strong是比em更强烈的强调，默认为粗体
+
+
+
 * 使元素消失的方法
   * `opacity：0`：该元素隐藏起来，但不会改变页面布局，如果该元素绑定了事件会触发。
   * `visibility:hidden`：该元素隐藏起来，但不会改变页面布局，不会触发该元素已经绑定的事件。
@@ -96,8 +102,6 @@ padding:10px;
   }
   ```
 
-  
-
 * 浮动相关
 
   * 为什么要清除浮动
@@ -105,8 +109,6 @@ padding:10px;
     主要是为了解决父元素高度坍陷问题。
 
     一个块级元素如果没有设置`height`,其`height`由子元素撑开，对子元素使用了浮动之后，子元素就会脱离文档流。那么父元素中没有内容撑开其高度，这样父元素的`height`就会被忽略。
-
-    
 
   * 如何清除
 
@@ -249,8 +251,6 @@ padding:10px;
     }
     ```
 
-    
-
   * 方案二：float 自身浮动法
 
     **center的div需要放到后面**，对左右使用float:left和float：right，float使左右两个元素脱离文档流，中间的正常文档流中，然后设置margin属性，留出左右两边的宽度。
@@ -296,7 +296,7 @@ padding:10px;
     	 4、overflow的值不为visible（默认值。内容不会被修剪，会呈现在元素框之外） 	     
     * 5、display的值为inline-block、table-cell、table-caption 
 
-  
+
 
   * BFC布局规则：
 
@@ -309,8 +309,6 @@ padding:10px;
     	 4.BFC的区域不会与float box重叠。 	     
 
     * 5.计算BFC的高度，浮动元素也参与计算
-
-      
 
   * BFC作用：
 
@@ -346,7 +344,6 @@ padding:10px;
   }
   ```
 
-  
 
 
 
