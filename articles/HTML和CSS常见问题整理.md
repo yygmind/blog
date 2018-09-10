@@ -76,8 +76,8 @@ padding:10px;
 
 
 * em和strong的区别
-  * em表示语义上的强调，默认为斜体
-  * strong表示重要性的一种强调，strong是比em更强烈的强调，默认为粗体
+  * em（emphasize）强调，表示语义上的强调，默认为斜体
+  * strong着重，表示重要性的一种强调，strong是比em更强烈的强调，默认为粗体
 
 
 
