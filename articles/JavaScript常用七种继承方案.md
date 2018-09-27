@@ -1,4 +1,4 @@
-### JavaScript常用六种继承方案
+### JavaScript常用七种继承方案
 
 
 
@@ -257,9 +257,35 @@ instance1.colors.push("3"); // ["red", "blue", "green", "3"]
 
 
 
+#### 7、混入方式继承多个对象
+
+```js
+function MyClass() {
+     SuperClass.call(this);
+     OtherSuperClass.call(this);
+}
+
+// 继承一个类
+MyClass.prototype = Object.create(SuperClass.prototype);
+// 混合其它
+Object.assign(MyClass.prototype, OtherSuperClass.prototype);
+// 重新指定constructor
+MyClass.prototype.constructor = MyClass;
+
+MyClass.prototype.myMethod = function() {
+     // do a thing
+};
+```
+
+`Object.assign`会把  `OtherSuperClass`原型上的函数拷贝到 `MyClass`原型上，使 MyClass 的所有实例都可用 OtherSuperClass 的方法。
+
+
+
 
 
 > [《javascript高级程序设计》笔记：继承](https://segmentfault.com/a/1190000011917606)
 >
 > https://segmentfault.com/a/1190000011880268
+>
+> [Object.create()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/create)
 
