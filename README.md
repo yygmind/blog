@@ -15,5 +15,5 @@
 
 #### 每周查漏补缺
 
-* [查漏补缺 18.10.08-18.10.14](./articles/查漏补缺 18.10.08-18.10.14.md)
+* [查漏补缺 18.10.08-18.10.14](https://github.com/yygmind/blog/blob/master/articles/%E6%9F%A5%E6%BC%8F%E8%A1%A5%E7%BC%BA%2018.10.08-18.10.14.md)
 
