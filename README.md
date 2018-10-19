@@ -17,3 +17,10 @@
 
 * [查漏补缺 18.10.08-18.10.14](https://github.com/yygmind/blog/blob/master/articles/%E6%9F%A5%E6%BC%8F%E8%A1%A5%E7%BC%BA%2018.10.08-18.10.14.md)
 
+
+
+#### 交流
+
+欢迎加我微信进一步交流或者找我内推，都可以。
+
+![个人微信](https://github.com/yygmind/blog/raw/master/images/20181019091851.jpg)
