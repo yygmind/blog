@@ -23,4 +23,8 @@
 
 欢迎加我微信进一步交流或者找我内推，都可以。
 
-![个人微信](https://github.com/yygmind/blog/raw/master/images/20181019091851.jpg)
+#### 个人微信
+![个人微信](https://github.com/yygmind/blog/raw/master/images/20181019091851.jpg) 
+
+#### 高级前端进阶公众号
+![高级前端进阶公众号](https://github.com/yygmind/blog/raw/master/images/qrcode_for_gh_0969a34b0388_430.jpg)
