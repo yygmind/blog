@@ -18,8 +18,15 @@
 #### 每周查漏补缺
 
 * [查漏补缺 18.10.05-18.10.21](https://github.com/yygmind/blog/blob/master/articles/%E6%9F%A5%E6%BC%8F%E8%A1%A5%E7%BC%BA%2018.10.15-18.10.21.md)
-
 * [查漏补缺 18.10.08-18.10.14](https://github.com/yygmind/blog/blob/master/articles/%E6%9F%A5%E6%BC%8F%E8%A1%A5%E7%BC%BA%2018.10.08-18.10.14.md)
+
+
+
+#### 每日阅读
+
+* [10月阅读](./daily reading/2018.10.md)
+
+ 
 
 
 #### 交流
