@@ -24,7 +24,7 @@
 
 #### 每日阅读
 
-* [10月阅读](https://github.com/yygmind/blog/blob/master/daily%20reading/2018.10.md)
+* [10月每日阅读](https://github.com/yygmind/blog/blob/master/daily%20reading/2018.10.md)
 
  
 
