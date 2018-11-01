@@ -4,10 +4,9 @@
 
 #### 博文
 
-* [Vue 进阶系列之响应式原理及实现](https://github.com/yygmind/blog/issues/6)
-
+* [Vue 进阶系列（二）之插件原理及实现](https://github.com/yygmind/blog/issues/9)
+* [[Vue 进阶系列（一）之响应式原理及实现](https://github.com/yygmind/blog/issues/6)](https://github.com/yygmind/blog/issues/6)
 * [JavaScript常用七种继承方案](https://github.com/yygmind/blog/issues/7)
-
 * [2018大厂高级前端面试题汇总](https://github.com/yygmind/blog/issues/5)
 * [JS数组常用算法详解](https://github.com/yygmind/blog/issues/4)
 * [HTML和CSS常见问题整理](https://github.com/yygmind/blog/issues/3)
@@ -24,6 +23,8 @@
 
 #### 每日阅读
 
+* [11月每日阅读]()
+
 * [10月每日阅读](https://github.com/yygmind/blog/blob/master/daily%20reading/2018.10.md)
 
  
@@ -31,5 +32,5 @@
 
 #### 交流
 
-欢迎加我微信进一步交流或者找我内推，前行的路上，共勉！
+我是木易杨，现在是网易高级前端工程师，目前维护了一个高级前端进阶群，欢迎加入。接下来让我带你走进高级前端的世界，在进阶的路上，共勉！
 ![image](https://mmbiz.qpic.cn/mmbiz_png/KfGu3WwVIa0k1YbyF9VUxf5uLfxtofia8RzfbcnrMXtvwJiar6ib4PMk8C4fPhkTQHibTb8sOpCMxhviafKMLSaAPXA/0?wx_fmt=png)
