@@ -5,7 +5,7 @@
 #### 博文
 
 * [Vue 进阶系列（二）之插件原理及实现](https://github.com/yygmind/blog/issues/9)
-* [[Vue 进阶系列（一）之响应式原理及实现](https://github.com/yygmind/blog/issues/6)](https://github.com/yygmind/blog/issues/6)
+* [Vue 进阶系列（一）之响应式原理及实现](https://github.com/yygmind/blog/issues/6)
 * [JavaScript常用七种继承方案](https://github.com/yygmind/blog/issues/7)
 * [2018大厂高级前端面试题汇总](https://github.com/yygmind/blog/issues/5)
 * [JS数组常用算法详解](https://github.com/yygmind/blog/issues/4)
@@ -23,7 +23,7 @@
 
 #### 每日阅读
 
-* [11月每日阅读]()
+* [11月每日阅读](https://github.com/yygmind/blog/blob/master/daily%20reading/2018.11.md)
 
 * [10月每日阅读](https://github.com/yygmind/blog/blob/master/daily%20reading/2018.10.md)
 
