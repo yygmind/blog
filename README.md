@@ -4,6 +4,8 @@
 
 #### 博文
 
+* [Vue 进阶系列（三）之Render函数原理及实现](https://github.com/yygmind/blog/issues/10)
+
 * [Vue 进阶系列（二）之插件原理及实现](https://github.com/yygmind/blog/issues/9)
 * [Vue 进阶系列（一）之响应式原理及实现](https://github.com/yygmind/blog/issues/6)
 * [JavaScript常用七种继承方案](https://github.com/yygmind/blog/issues/7)
