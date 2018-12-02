@@ -20,7 +20,6 @@
 #### 博文
 
 * [Vue 进阶系列（三）之Render函数原理及实现](https://github.com/yygmind/blog/issues/10)
-
 * [Vue 进阶系列（二）之插件原理及实现](https://github.com/yygmind/blog/issues/9)
 * [Vue 进阶系列（一）之响应式原理及实现](https://github.com/yygmind/blog/issues/6)
 * [JavaScript常用七种继承方案](https://github.com/yygmind/blog/issues/7)
@@ -33,7 +32,7 @@
 
 #### 优质资料汇总
 
-* [优质资料汇总]()
+* [优质资料汇总](https://github.com/yygmind/blog/blob/master/datum/%E4%BC%98%E8%B4%A8%E8%B5%84%E6%96%99%E6%B1%87%E6%80%BB.md)
 
 
 
@@ -47,7 +46,6 @@
 #### 每日阅读
 
 * [11月每日阅读](https://github.com/yygmind/blog/blob/master/daily%20reading/2018.11.md)
-
 * [10月每日阅读](https://github.com/yygmind/blog/blob/master/daily%20reading/2018.10.md)
 
  
@@ -63,4 +61,4 @@
 
 我的另一个号：**木易杨说**，不定期聊聊职场、理财等，欢迎关注。
 
-![image](https://github.com/yygmind/blog/raw/master/images/mu_yi_yang_shuo.png)
+![image](https://github.com/yygmind/blog/blob/master/images/mu_yi_yang_shuo.jpg?raw=true)
