@@ -15,6 +15,8 @@
 * [【进阶3-1期】JavaScript深入之史上最全--5种this绑定全面解析](https://github.com/yygmind/blog/issues/20)
 * [【进阶3-2期】JavaScript深入之重新认识箭头函数的this](https://github.com/yygmind/blog/issues/21)
 * [【进阶3-3期】深度广度解析 call 和 apply 原理、使用场景及实现](https://github.com/yygmind/blog/issues/22)
+* [【进阶3-4期】深度解析bind原理、使用场景及模拟实现](https://github.com/yygmind/blog/issues/23)
+* [【进阶3-5期】深度解析 new 原理及模拟实现](https://github.com/yygmind/blog/issues/24)
 
 
 
