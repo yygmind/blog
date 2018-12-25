@@ -17,6 +17,7 @@
 * [【进阶3-3期】深度广度解析 call 和 apply 原理、使用场景及实现](https://github.com/yygmind/blog/issues/22)
 * [【进阶3-4期】深度解析bind原理、使用场景及模拟实现](https://github.com/yygmind/blog/issues/23)
 * [【进阶3-5期】深度解析 new 原理及模拟实现](https://github.com/yygmind/blog/issues/24)
+* [【进阶4-1期】详细解析赋值、浅拷贝和深拷贝的区别](https://github.com/yygmind/blog/issues/25)
 
 
 
