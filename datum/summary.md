@@ -9,6 +9,7 @@
 * [老姚的 JavaScript 正则表达式迷你书](https://github.com/qdlaoyao/js-regex-mini-book)
 * [五星推荐的系列文章清单](https://juejin.im/post/5c1f01fef265da61587723f4)：包含：React、Redux、双向数据绑定、函数式编程、手写Promise、手写状态管理
 * [clean\-code\-javascript](https://github.com/ryanmcdermott/clean-code-javascript)：JavaScript 代码简洁之道
+* [博客 Dmitry Soshnikov](http://dmitrysoshnikov.com/)：讨论ES3，ES5语言的技术原理，包括：this，作用域链，函数，闭包，词法环境等
 
 
 
