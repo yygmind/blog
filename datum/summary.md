@@ -101,3 +101,8 @@
 
 * [手把手带你撸一个脚手架](https://juejin.im/post/5bead1b25188251e1a1f4d34)
 
+
+
+### Nginx配置
+
+* [阿里云https\+nginx服务搭建](https://www.cnblogs.com/fanxingthink/p/8244694.html)
