@@ -18,6 +18,7 @@
 * [【进阶3-4期】深度解析bind原理、使用场景及模拟实现](https://github.com/yygmind/blog/issues/23)
 * [【进阶3-5期】深度解析 new 原理及模拟实现](https://github.com/yygmind/blog/issues/24)
 * [【进阶4-1期】详细解析赋值、浅拷贝和深拷贝的区别](https://github.com/yygmind/blog/issues/25)
+* [【进阶4-2期】Object.assign 原理及其实现](https://github.com/yygmind/blog/issues/26)
 
 
 
@@ -41,7 +42,7 @@
 
 #### 优质资料汇总
 
-* [优质资料汇总](https://github.com/yygmind/blog/blob/master/datum/%E4%BC%98%E8%B4%A8%E8%B5%84%E6%96%99%E6%B1%87%E6%80%BB.md)
+* [优质资料汇总](https://github.com/yygmind/blog/blob/master/datum/summary.md)
 
 
 
