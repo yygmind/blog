@@ -58,18 +58,24 @@
 ### Promise
 
 - [小邵教你玩转promise源码](https://juejin.im/post/5b6e5cbf51882519ad61b67e)
+
 - [剖析Promise内部结构，一步一步实现一个完整的、能通过所有Test case的Promise类 ](https://github.com/xieranmaya/blog/issues/3)
+
 
 ### Event Loop
 
 * [深入理解 JavaScript 事件循环（一）— event loop](https://www.cnblogs.com/dong-xu/p/7000163.html)
+
 * [Tasks, microtasks, queues and schedules](https://jakearchibald.com/2015/tasks-microtasks-queues-and-schedules/)
+
 * [这一次，彻底弄懂 JavaScript 执行机制](https://juejin.im/post/59e85eebf265da430d571f89#comment)
+
 
 ### 其他
 
 - [this、apply、call、bind](https://juejin.im/post/59bfe84351882531b730bac2)
 - [js 深拷贝 vs 浅拷贝](https://juejin.im/post/59ac1c4ef265da248e75892b)
+- [深拷贝的终极探索（99%的人都不知道）](https://segmentfault.com/a/1190000016672263)
 - [JavaScript 世界万物诞生记](https://zhuanlan.zhihu.com/p/22989691)
 - [JavaScript专题之函数柯里化](https://github.com/mqyqingfeng/Blog/issues/42)
 - [看看这些被同事喷的JS代码风格你写过多少](https://juejin.im/post/5becf928f265da61380ec986)
