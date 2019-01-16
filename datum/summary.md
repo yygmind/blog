@@ -10,6 +10,7 @@
 * [五星推荐的系列文章清单](https://juejin.im/post/5c1f01fef265da61587723f4)：包含：React、Redux、双向数据绑定、函数式编程、手写Promise、手写状态管理
 * [clean\-code\-javascript](https://github.com/ryanmcdermott/clean-code-javascript)：JavaScript 代码简洁之道
 * [博客 Dmitry Soshnikov](http://dmitrysoshnikov.com/)：讨论ES3，ES5语言的技术原理，包括：this，作用域链，函数，闭包，词法环境等
+* [how\-javascript\-works](https://github.com/Troland/how-javascript-works)：译文，此文作者非json之父，不过评价也不错
 
 
 
@@ -53,6 +54,12 @@
 
 
 
+## CSS
+
+* [CSS Inspiration](https://github.com/chokcoco/CSS-Inspiration)：寻找到使用 CSS 的灵感，以分类的形式，展示不同 CSS 属性或者不同的课题。
+
+
+
 ## JavaScript
 
 ### Promise
@@ -79,6 +86,8 @@
 - [JavaScript 世界万物诞生记](https://zhuanlan.zhihu.com/p/22989691)
 - [JavaScript专题之函数柯里化](https://github.com/mqyqingfeng/Blog/issues/42)
 - [看看这些被同事喷的JS代码风格你写过多少](https://juejin.im/post/5becf928f265da61380ec986)
+- [[译] 使用原生 JavaScript 构建状态管理系统](https://juejin.im/post/5b763528e51d45559e3a5b64)
+- [前端中的 IoC 理念](https://juejin.im/post/5c2c47dcf265da616d544a53#comment)
 
 
 
@@ -95,9 +104,27 @@
 * [从输入URL到页面加载的过程？如何由一道题完善自己的前端知识体系！](http://www.dailichun.com/2018/03/12/whenyouenteraurl.html)
 
 
+## React
+
+* [React 源码剖析系列 － 不可思议的 react diff](https://zhuanlan.zhihu.com/p/20346379)
+
+
+
+## Vue
+
+* [Blazing Fast HTML](https://elm-lang.org/blog/blazing-fast-html-round-two) elm 实现了新的 diff 算法
+
+
+
 ## NodeJS
 
 * [Node.js Best Practices](https://github.com/i0natan/nodebestpractices)
+
+
+
+## 算法
+
+* [JavaScript 算法之复杂度分析](https://juejin.im/post/5c2a1d9d6fb9a04a0f654581#comment)
 
 
 
@@ -112,3 +139,10 @@
 ### Nginx配置
 
 * [阿里云https\+nginx服务搭建](https://www.cnblogs.com/fanxingthink/p/8244694.html)
+
+
+
+## 演讲技巧
+
+* [聊聊技术演讲的二三事](https://zhuanlan.zhihu.com/p/48987069)
+
