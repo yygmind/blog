@@ -24,6 +24,8 @@
 
 #### 其他博文
 
+* [前端大神 Winter 直播笔记及我的学习方法论](https://github.com/yygmind/blog/issues/28)
+
 * [Vue 进阶系列（三）之Render函数原理及实现](https://github.com/yygmind/blog/issues/10)
 * [Vue 进阶系列（二）之插件原理及实现](https://github.com/yygmind/blog/issues/9)
 * [Vue 进阶系列（一）之响应式原理及实现](https://github.com/yygmind/blog/issues/6)

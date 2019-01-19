@@ -88,6 +88,8 @@
 - [看看这些被同事喷的JS代码风格你写过多少](https://juejin.im/post/5becf928f265da61380ec986)
 - [[译] 使用原生 JavaScript 构建状态管理系统](https://juejin.im/post/5b763528e51d45559e3a5b64)
 - [前端中的 IoC 理念](https://juejin.im/post/5c2c47dcf265da616d544a53#comment)
+- [深入 CommonJs 与 ES6 Module](https://segmentfault.com/a/1190000017878394)
+- [Canvas性能优化](https://juejin.im/post/5ba478136fb9a05d151ca173)
 
 
 
