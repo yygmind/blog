@@ -11,6 +11,7 @@
 * [clean\-code\-javascript](https://github.com/ryanmcdermott/clean-code-javascript)：JavaScript 代码简洁之道
 * [博客 Dmitry Soshnikov](http://dmitrysoshnikov.com/)：讨论ES3，ES5语言的技术原理，包括：this，作用域链，函数，闭包，词法环境等
 * [how\-javascript\-works](https://github.com/Troland/how-javascript-works)：译文，此文作者非json之父，不过评价也不错
+* [professional\-programming](https://github.com/charlax/professional-programming)：开源的全栈编程资源合集
 
 
 
@@ -51,6 +52,9 @@
 ## 计算机基础
 
 * [Stack的三种含义](http://www.ruanyifeng.com/blog/2013/11/stack.html)：介绍 “调用栈” 和 “内存栈“ 的区别
+* [抽象语法树在 JavaScript 中的应用](https://tech.meituan.com/2014/10/08/the-practice-of-abstract-syntax-trees-in-javascript.html)
+* [通过开发 Babel 插件理解抽象语法树（AST）](https://www.zcfy.cc/article/understanding-asts-by-building-your-own-babel-plugin)
+* [AST 业界实现收集整理](https://toutiao.io/posts/34uurs/preview)
 
 
 
