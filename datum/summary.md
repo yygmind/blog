@@ -81,6 +81,8 @@
 
 * [这一次，彻底弄懂 JavaScript 执行机制](https://juejin.im/post/59e85eebf265da430d571f89#comment)
 
+  
+
 
 ### 其他
 
@@ -94,6 +96,7 @@
 - [前端中的 IoC 理念](https://juejin.im/post/5c2c47dcf265da616d544a53#comment)
 - [深入 CommonJs 与 ES6 Module](https://segmentfault.com/a/1190000017878394)
 - [Canvas性能优化](https://juejin.im/post/5ba478136fb9a05d151ca173)
+- [Why never use new Array in Javascript](https://coderwall.com/p/h4xm0w/why-never-use-new-array-in-javascript)
 
 
 
@@ -126,6 +129,9 @@
 ## NodeJS
 
 * [Node.js Best Practices](https://github.com/i0natan/nodebestpractices)
+* [深入浅出 Koa](https://github.com/berwin/Blog/issues/8)
+* [深入浅出 Koa2](https://github.com/berwin/Blog/issues/9)
+* [一篇文章构建你的 NodeJS 知识体系](https://juejin.im/post/5c4c0ee8f265da61117aa527)
 
 
 
