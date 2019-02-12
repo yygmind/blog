@@ -20,6 +20,7 @@
 * [【进阶4-1期】详细解析赋值、浅拷贝和深拷贝的区别](https://github.com/yygmind/blog/issues/25)
 * [【进阶4-2期】Object.assign 原理及其实现](https://github.com/yygmind/blog/issues/26)
 * [【进阶4\-3期】面试题之如何实现一个深拷贝](https://github.com/yygmind/blog/issues/29)
+* [【进阶4\-4期】Lodash是如何实现深拷贝的](https://github.com/yygmind/blog/issues/31)
 
 
 

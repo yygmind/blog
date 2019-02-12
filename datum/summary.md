@@ -1,6 +1,8 @@
+[TOC]
+
+
+
 # 优质资料汇总
-
-
 
 ## 资料合集
 
@@ -61,16 +63,25 @@
 ## CSS
 
 * [CSS Inspiration](https://github.com/chokcoco/CSS-Inspiration)：寻找到使用 CSS 的灵感，以分类的形式，展示不同 CSS 属性或者不同的课题。
+* [16种方法实现水平居中垂直居中](https://juejin.im/post/58f818bbb123db006233ab2a)
 
 
 
 ## JavaScript
+
+### 原型
+
+* [详解JS原型链与继承](http://louiszhai.github.io/2015/12/15/prototypeChain/)
+* [JavaScript 世界万物诞生记](https://zhuanlan.zhihu.com/p/22989691)
+
+
 
 ### Promise
 
 - [小邵教你玩转promise源码](https://juejin.im/post/5b6e5cbf51882519ad61b67e)
 
 - [剖析Promise内部结构，一步一步实现一个完整的、能通过所有Test case的Promise类 ](https://github.com/xieranmaya/blog/issues/3)
+
 
 
 ### Event Loop
@@ -89,7 +100,6 @@
 - [this、apply、call、bind](https://juejin.im/post/59bfe84351882531b730bac2)
 - [js 深拷贝 vs 浅拷贝](https://juejin.im/post/59ac1c4ef265da248e75892b)
 - [深拷贝的终极探索（99%的人都不知道）](https://segmentfault.com/a/1190000016672263)
-- [JavaScript 世界万物诞生记](https://zhuanlan.zhihu.com/p/22989691)
 - [JavaScript专题之函数柯里化](https://github.com/mqyqingfeng/Blog/issues/42)
 - [看看这些被同事喷的JS代码风格你写过多少](https://juejin.im/post/5becf928f265da61380ec986)
 - [[译] 使用原生 JavaScript 构建状态管理系统](https://juejin.im/post/5b763528e51d45559e3a5b64)
@@ -97,6 +107,7 @@
 - [深入 CommonJs 与 ES6 Module](https://segmentfault.com/a/1190000017878394)
 - [Canvas性能优化](https://juejin.im/post/5ba478136fb9a05d151ca173)
 - [Why never use new Array in Javascript](https://coderwall.com/p/h4xm0w/why-never-use-new-array-in-javascript)
+- [JavaScript数组所有API全解密](https://juejin.im/post/5902d56e1b69e60058c634d6#comment)
 
 
 
@@ -117,6 +128,8 @@
 ## React
 
 * [React 源码剖析系列 － 不可思议的 react diff](https://zhuanlan.zhihu.com/p/20346379)
+* [React中setState同步更新策略](https://zhuanlan.zhihu.com/p/24781259)
+* [[译] React setState 的麻烦事儿](https://ruby-china.org/topics/32715)
 
 
 
@@ -138,6 +151,7 @@
 ## 算法
 
 * [JavaScript 算法之复杂度分析](https://juejin.im/post/5c2a1d9d6fb9a04a0f654581#comment)
+* [JS中可能用得到的全部的排序算法](https://juejin.im/post/58c9d5fb1b69e6006b686bce#comment)
 
 
 
@@ -159,3 +173,8 @@
 
 * [聊聊技术演讲的二三事](https://zhuanlan.zhihu.com/p/48987069)
 
+
+
+## 工具
+
+* [开发效率提升之工具篇](https://juejin.im/post/5909b4b5da2f60005d1f0bcb)
