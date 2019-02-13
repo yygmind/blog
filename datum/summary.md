@@ -114,14 +114,11 @@
 ## 浏览器
 
 * [浏览器渲染详细过程：重绘、重排和 composite 只是冰山一角](https://juejin.im/entry/590801780ce46300617c89b8)
-
 * [深入理解浏览器的缓存机制](https://juejin.im/post/5b014aa66fb9a07ac23b04c8)
-
 * [一文读懂前端缓存](https://zhuanlan.zhihu.com/p/44789005)
-
 * [我遇过的最难的Cookie问题](https://github.com/aszx87410/blog/issues/17)
-
-* [从输入URL到页面加载的过程？如何由一道题完善自己的前端知识体系！](http://www.dailichun.com/2018/03/12/whenyouenteraurl.html)
+* [从输入URL到页面加载的过程？如何由一道题完善自己的前端知识体系！](https://juejin.im/post/5aa5cb846fb9a028e25d2fb1)
+* [从浏览器多进程到JS单线程，JS运行机制最全面的一次梳理](https://juejin.im/post/5a6547d0f265da3e283a1df7)
 
 
 
@@ -136,6 +133,7 @@
 ## Vue
 
 * [Blazing Fast HTML](https://elm-lang.org/blog/blazing-fast-html-round-two) elm 实现了新的 diff 算法
+* [Vue\.js 源码解析](https://github.com/answershuto/learnVue)
 
 
 
