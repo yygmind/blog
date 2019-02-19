@@ -21,6 +21,7 @@
 * [【进阶4-2期】Object.assign 原理及其实现](https://github.com/yygmind/blog/issues/26)
 * [【进阶4\-3期】面试题之如何实现一个深拷贝](https://github.com/yygmind/blog/issues/29)
 * [【进阶4\-4期】Lodash是如何实现深拷贝的](https://github.com/yygmind/blog/issues/31)
+* [【进阶5\-1期】重新认识构造函数、原型和原型链](https://github.com/yygmind/blog/issues/32)
 
 
 
@@ -31,12 +32,20 @@
 * [前端大神 Winter 直播笔记及我的学习方法论](https://github.com/yygmind/blog/issues/28)
 
 * [Vue 进阶系列（三）之Render函数原理及实现](https://github.com/yygmind/blog/issues/10)
+
 * [Vue 进阶系列（二）之插件原理及实现](https://github.com/yygmind/blog/issues/9)
+
 * [Vue 进阶系列（一）之响应式原理及实现](https://github.com/yygmind/blog/issues/6)
+
 * [JavaScript常用七种继承方案](https://github.com/yygmind/blog/issues/7)
+
 * [2018大厂高级前端面试题汇总](https://github.com/yygmind/blog/issues/5)
+
 * [JS数组常用算法详解](https://github.com/yygmind/blog/issues/4)
+
 * [HTML和CSS常见问题整理](https://github.com/yygmind/blog/issues/3)
+
+  
 
 
 

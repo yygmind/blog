@@ -73,14 +73,16 @@
 
 * [详解JS原型链与继承](http://louiszhai.github.io/2015/12/15/prototypeChain/)
 * [JavaScript 世界万物诞生记](https://zhuanlan.zhihu.com/p/22989691)
+* [JavaScript Prototype Explained By Examples](http://www.javascripttutorial.net/javascript-prototype/)
+* [Javascripter 必須知道的繼承 prototype, \[[prototype]\], `__proto__`](https://medium.com/@peterchang_82818/javascripter-%E5%BF%85%E9%A0%88%E7%9F%A5%E9%81%93%E7%9A%84%E7%B9%BC%E6%89%BF%E5%9B%A0%E5%AD%90-prototype-prototype-proto-object-class-inheritace-nodejs-%E7%89%A9%E4%BB%B6-%E7%B9%BC%E6%89%BF-54102240a8b4)
 
 
 
 ### Promise
 
 - [小邵教你玩转promise源码](https://juejin.im/post/5b6e5cbf51882519ad61b67e)
-
 - [剖析Promise内部结构，一步一步实现一个完整的、能通过所有Test case的Promise类 ](https://github.com/xieranmaya/blog/issues/3)
+- [更快的异步函数和 Promise](https://v8.js.cn/blog/fast-async/)
 
 
 
@@ -150,6 +152,12 @@
 
 * [JavaScript 算法之复杂度分析](https://juejin.im/post/5c2a1d9d6fb9a04a0f654581#comment)
 * [JS中可能用得到的全部的排序算法](https://juejin.im/post/58c9d5fb1b69e6006b686bce#comment)
+
+
+
+## 网络
+
+* [通俗大白话来理解TCP协议的三次握手和四次分手](https://github.com/jawil/blog/issues/14)
 
 
 
