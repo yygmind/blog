@@ -47,16 +47,19 @@
 
   
 
-#### 优质资料汇总
+#### 其他链接
 
-* [优质资料汇总](https://www.yuque.com/advanced-frontend)
+* [我的掘金](https://juejin.im/user/56dea4aa7664bf00559f002d/posts)
+* [每日一题](https://github.com/Advanced-Frontend/Daily-Interview-Question)
+
+* [优质资料](https://www.yuque.com/advanced-frontend)
 
 
 
 
 #### 交流
 
-我是木易杨，网易高级前端工程师，跟着我**每周重点攻克一个前端面试重难点**。接下来让我带你走进高级前端的世界，在进阶的路上，共勉！
+我是木易杨，公众号「高级前端进阶」作者，跟着我**每周重点攻克一个前端面试重难点**。接下来让我带你走进高级前端的世界，在进阶的路上，共勉！
 
 如果你想加群讨论每期面试知识点，公众号回复[[加群](#)]即可 ![image](https://github.com/yygmind/blog/raw/master/images/weixin_re.png)
 
