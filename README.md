@@ -1,8 +1,10 @@
-### 砥砺前行    未来可期
+<center>
+
+## 砥砺前行    未来可期
 
 
 
-#### 前端进阶系列
+## 前端进阶系列
 
 * [【进阶1-1期】理解JavaScript 中的执行上下文和执行栈](https://github.com/yygmind/blog/issues/12)
 * [【进阶1-2期】JavaScript深入之执行上下文栈和变量对象](https://github.com/yygmind/blog/issues/13)
@@ -22,10 +24,11 @@
 * [【进阶4\-3期】面试题之如何实现一个深拷贝](https://github.com/yygmind/blog/issues/29)
 * [【进阶4\-4期】Lodash是如何实现深拷贝的](https://github.com/yygmind/blog/issues/31)
 * [【进阶5\-1期】重新认识构造函数、原型和原型链](https://github.com/yygmind/blog/issues/32)
+* [【进阶5\-2期】图解原型链及其继承](https://github.com/yygmind/blog/issues/34)
 
 
 
-#### 其他博文
+## 其他博文
 
 * [精华提炼「你不知道的 JavaScript」之作用域和闭包](https://github.com/yygmind/blog/issues/30)
 
@@ -48,7 +51,7 @@
 
 
 
-#### 其他链接
+## 其他链接
 
 * [我的掘金](https://juejin.im/user/56dea4aa7664bf00559f002d/posts)
 * [每日一题](https://github.com/Advanced-Frontend/Daily-Interview-Question)
@@ -57,8 +60,7 @@
 
 
 
-
-#### 交流
+## 交流
 
 我是木易杨，公众号「高级前端进阶」作者，跟着我**每周重点攻克一个前端面试重难点**。接下来让我带你走进高级前端的世界，在进阶的路上，共勉！
 
