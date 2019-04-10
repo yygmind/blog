@@ -24,7 +24,7 @@
 * [【进阶4\-3期】面试题之如何实现一个深拷贝](https://github.com/yygmind/blog/issues/29)
 * [【进阶4\-4期】Lodash是如何实现深拷贝的](https://github.com/yygmind/blog/issues/31)
 * [【进阶5\-1期】重新认识构造函数、原型和原型链](https://github.com/yygmind/blog/issues/32)
-* [【进阶5\-2期】图解原型链及其继承](https://github.com/yygmind/blog/issues/34)
+* [【进阶5\-2期】图解原型链及其继承优缺点](https://github.com/yygmind/blog/issues/34)
 
 
 
