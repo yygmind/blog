@@ -2,8 +2,12 @@
 
 ## 砥砺前行    未来可期
 
-这里是木易杨的博客，所思所想汇总于此，在进阶之路上笔耕不辍，希望我的文章对你有所帮助，共勉！
+这里是 **木易杨** 的博客，所思所想汇总于此，在进阶之路上笔耕不辍，希望我的文章对你有所帮助，共勉！
+
+如果你想加群一起学习，公众号回复[[加群](#)]即可，点击可查看：https://github.com/yygmind/blog/raw/master/images/weixin_re.png
+
 <br/>
+
 
 
 
@@ -277,6 +281,7 @@
 * [HTML和CSS常见问题整理](https://github.com/yygmind/blog/issues/3)
 
 
+<br/>
 
 
 ## 其他链接
@@ -286,6 +291,7 @@
 
 * [优质资料](https://www.yuque.com/advanced-frontend)
 
+<br/>
 
 
 ## 交流
