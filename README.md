@@ -10,8 +10,6 @@
 
 
 
-
-
 ## 前端进阶系列
 
 目前已更新到 **第 6 期**，正在努力写作中，如怕遗漏 **Star** 、**Follow** 走起。
@@ -24,11 +22,11 @@
 
 ### 第 1 期：调用堆栈
 
-* [【进阶1-1期】理解JavaScript 中的执行上下文和执行栈](https://github.com/yygmind/blog/issues/12)
-* [【进阶1-2期】JavaScript深入之执行上下文栈和变量对象](https://github.com/yygmind/blog/issues/13)
-* [【进阶1-3期】JavaScript深入之内存空间详细图解](https://github.com/yygmind/blog/issues/14)
-* [【进阶1-4期】JavaScript深入之带你走进内存机制](https://github.com/yygmind/blog/issues/15)
-* [【进阶1-5期】JavaScript深入之4类常见内存泄漏及如何避免](https://github.com/yygmind/blog/issues/16)
+* [【进阶 1-1 期】理解JavaScript 中的执行上下文和执行栈](https://github.com/yygmind/blog/issues/12)
+* [【进阶 1-2 期】JavaScript深入之执行上下文栈和变量对象](https://github.com/yygmind/blog/issues/13)
+* [【进阶 1-3 期】JavaScript深入之内存空间详细图解](https://github.com/yygmind/blog/issues/14)
+* [【进阶 1-4 期】JavaScript深入之带你走进内存机制](https://github.com/yygmind/blog/issues/15)
+* [【进阶 1-5 期】JavaScript深入之4类常见内存泄漏及如何避免](https://github.com/yygmind/blog/issues/16)
 
 <br/>
 
@@ -37,9 +35,9 @@
 
 ### 第 2 期：作用域闭包
 
-* [【进阶2-1期】深入浅出图解作用域链和闭包](https://github.com/yygmind/blog/issues/17)
-* [【进阶2-2期】JavaScript深入之从作用域链理解闭包](https://github.com/yygmind/blog/issues/18)
-* [【进阶2-3期】JavaScript深入之闭包面试题解](https://github.com/yygmind/blog/issues/19)
+* [【进阶 2-1 期】深入浅出图解作用域链和闭包](https://github.com/yygmind/blog/issues/17)
+* [【进阶 2-2 期】JavaScript深入之从作用域链理解闭包](https://github.com/yygmind/blog/issues/18)
+* [【进阶 2-3 期】JavaScript深入之闭包面试题解](https://github.com/yygmind/blog/issues/19)
 
 <br/>
 
@@ -48,11 +46,11 @@
 
 ### 第 3 期：this 全面解析
 
-* [【进阶3-1期】JavaScript深入之史上最全--5种this绑定全面解析](https://github.com/yygmind/blog/issues/20)
-* [【进阶3-2期】JavaScript深入之重新认识箭头函数的this](https://github.com/yygmind/blog/issues/21)
-* [【进阶3-3期】深度广度解析 call 和 apply 原理、使用场景及实现](https://github.com/yygmind/blog/issues/22)
-* [【进阶3-4期】深度解析bind原理、使用场景及模拟实现](https://github.com/yygmind/blog/issues/23)
-* [【进阶3-5期】深度解析 new 原理及模拟实现](https://github.com/yygmind/blog/issues/24)
+* [【进阶 3-1 期】JavaScript深入之史上最全--5种this绑定全面解析](https://github.com/yygmind/blog/issues/20)
+* [【进阶 3-2 期】JavaScript深入之重新认识箭头函数的this](https://github.com/yygmind/blog/issues/21)
+* [【进阶 3-3 期】深度广度解析 call 和 apply 原理、使用场景及实现](https://github.com/yygmind/blog/issues/22)
+* [【进阶 3-4 期】深度解析bind原理、使用场景及模拟实现](https://github.com/yygmind/blog/issues/23)
+* [【进阶 3-5 期】深度解析 new 原理及模拟实现](https://github.com/yygmind/blog/issues/24)
 
 <br/>
 
@@ -61,10 +59,10 @@
 
 ### 第 4 期：深浅拷贝原理
 
-* [【进阶4-1期】详细解析赋值、浅拷贝和深拷贝的区别](https://github.com/yygmind/blog/issues/25)
-* [【进阶4-2期】Object.assign 原理及其实现](https://github.com/yygmind/blog/issues/26)
-* [【进阶4\-3期】面试题之如何实现一个深拷贝](https://github.com/yygmind/blog/issues/29)
-* [【进阶4\-4期】Lodash是如何实现深拷贝的](https://github.com/yygmind/blog/issues/31)
+* [【进阶 4-1 期】详细解析赋值、浅拷贝和深拷贝的区别](https://github.com/yygmind/blog/issues/25)
+* [【进阶 4-2 期】Object.assign 原理及其实现](https://github.com/yygmind/blog/issues/26)
+* [【进阶 4\-3 期】面试题之如何实现一个深拷贝](https://github.com/yygmind/blog/issues/29)
+* [【进阶 4\-4 期】Lodash是如何实现深拷贝的](https://github.com/yygmind/blog/issues/31)
 
 <br/>
 
@@ -73,9 +71,9 @@
 
 ### 第 5 期：原型Prototype
 
-* [【进阶5\-1期】重新认识构造函数、原型和原型链](https://github.com/yygmind/blog/issues/32)
-* [【进阶5\-2期】图解原型链及其继承优缺点](https://github.com/yygmind/blog/issues/34)
-* [【进阶5\-3期】深入探究 Function & Object 鸡蛋问题](https://github.com/yygmind/blog/issues/35)
+* [【进阶 5\-1 期】重新认识构造函数、原型和原型链](https://github.com/yygmind/blog/issues/32)
+* [【进阶 5\-2 期】图解原型链及其继承优缺点](https://github.com/yygmind/blog/issues/34)
+* [【进阶 5\-3 期】深入探究 Function & Object 鸡蛋问题](https://github.com/yygmind/blog/issues/35)
 
 <br/>
 
@@ -85,6 +83,7 @@
 ### 第 6 期：高阶函数
 
 * [【进阶 6\-1 期】JavaScript 高阶函数浅析](https://github.com/yygmind/blog/issues/36)
+* [【进阶 6\-2 期】深入高阶函数应用之柯里化](https://github.com/yygmind/blog/issues/37)
 * 正在努力写作中
 
 <br/>
