@@ -84,6 +84,7 @@
 
 * [【进阶 6\-1 期】JavaScript 高阶函数浅析](https://github.com/yygmind/blog/issues/36)
 * [【进阶 6\-2 期】深入高阶函数应用之柯里化](https://github.com/yygmind/blog/issues/37)
+* [【进阶 6\-3 期】深入浅出节流函数 throttle](https://github.com/yygmind/blog/issues/38)
 * 正在努力写作中
 
 <br/>
