@@ -86,6 +86,7 @@
 * [【进阶 6\-2 期】深入高阶函数应用之柯里化](https://github.com/yygmind/blog/issues/37)
 * [【进阶 6\-3 期】深入浅出节流函数 throttle](https://github.com/yygmind/blog/issues/38)
 * [【进阶 6\-4 期】深入浅出防抖函数 debounce](https://github.com/yygmind/blog/issues/39)
+* [【进阶 6\-5 期】[译] Throttle 和 Debounce 在 React 中的应用](https://github.com/yygmind/blog/issues/40)
 * 正在努力写作中
 
 <br/>
