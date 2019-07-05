@@ -87,6 +87,7 @@
 * [【进阶 6\-3 期】深入浅出节流函数 throttle](https://github.com/yygmind/blog/issues/38)
 * [【进阶 6\-4 期】深入浅出防抖函数 debounce](https://github.com/yygmind/blog/issues/39)
 * [【进阶 6\-5 期】[译] Throttle 和 Debounce 在 React 中的应用](https://github.com/yygmind/blog/issues/40)
+* [【进阶 6\-6 期】深入篇 \| 阿里 P6 必会 Lodash 防抖节流函数实现原理](https://github.com/yygmind/blog/issues/41)
 * 正在努力写作中
 
 <br/>
