@@ -88,6 +88,7 @@
 * [【进阶 6\-4 期】深入浅出防抖函数 debounce](https://github.com/yygmind/blog/issues/39)
 * [【进阶 6\-5 期】[译] Throttle 和 Debounce 在 React 中的应用](https://github.com/yygmind/blog/issues/40)
 * [【进阶 6\-6 期】深入篇 \| 阿里 P6 必会 Lodash 防抖节流函数实现原理](https://github.com/yygmind/blog/issues/41)
+* [【进阶 6\-7 期】浅出篇 | 7 个角度吃透 Lodash 防抖节流原理](https://github.com/yygmind/blog/issues/44)
 * 正在努力写作中
 
 <br/>
@@ -265,22 +266,15 @@
 
 ## 其他博文
 
+* [前端 100 问：能搞懂80%的请把简历给我](https://github.com/yygmind/blog/issues/43)
 * [精华提炼「你不知道的 JavaScript」之作用域和闭包](https://github.com/yygmind/blog/issues/30)
-
 * [前端大神 Winter 直播笔记及我的学习方法论](https://github.com/yygmind/blog/issues/28)
-
 * [Vue 进阶系列（三）之Render函数原理及实现](https://github.com/yygmind/blog/issues/10)
-
 * [Vue 进阶系列（二）之插件原理及实现](https://github.com/yygmind/blog/issues/9)
-
 * [Vue 进阶系列（一）之响应式原理及实现](https://github.com/yygmind/blog/issues/6)
-
 * [JavaScript常用七种继承方案](https://github.com/yygmind/blog/issues/7)
-
 * [2018大厂高级前端面试题汇总](https://github.com/yygmind/blog/issues/5)
-
 * [JS数组常用算法详解](https://github.com/yygmind/blog/issues/4)
-
 * [HTML和CSS常见问题整理](https://github.com/yygmind/blog/issues/3)
 
 
