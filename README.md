@@ -4,7 +4,7 @@
 
 这里是 **木易杨** 的博客，所思所想汇总于此，在进阶之路上笔耕不辍，希望我的文章对你有所帮助，共勉！
 
-如果你想一起学习进步，关注公众号「**高级前端进阶**」即可，点击可查看：https://github.com/yygmind/blog/raw/master/images/weixin_re.png
+[线上版本阅读更流畅，点击阅读](https://muyiy.vip/blog/)
 
 <br/>
 
