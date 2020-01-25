@@ -303,7 +303,7 @@
 
 我是木易杨，公众号「高级前端进阶」作者，跟着我**每周重点攻克一个前端面试重难点**。接下来让我带你走进高级前端的世界，在进阶的路上，共勉！
 
-如果你想加群讨论每期面试知识点，公众号回复[[加群](#)]即可 ![image](https://github.com/yygmind/blog/raw/master/images/weixin_re.png)
+如果你想加群讨论每期面试知识点，公众号回复[[加群](#)]即可 ![image](http://resource.muyiy.cn/image/20200123162151.png)
 
 
 
